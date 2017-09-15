@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+  padding: 0;
+}
+html,body {
+  font-family: sans-serif;
+  font-size:0.25rem;
+  width:100%;
+  height:100%;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+#root{
+	width:100%;
+	height:100%;
+}
+.app{
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+
+}
+.conent{
+	width:100%;
+	flex: 1;
+}
+.nav{
+	width:100%;
+	height:1rem;
+	border-top: #f5f5f5 1px solid;
+  background: #fff;
+}
+.nav li{
+	float:left;
+	width:25%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+.nav li a{
+	color:#222;
+}
+.nav li .icon-shouye{
+	font-weight: 700;
+}
+.nav li i{
+	font-size:0.3rem;
+	color:#222;
+}
