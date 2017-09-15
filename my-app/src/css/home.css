@@ -1,0 +1,51 @@
+header{
+	height: 100%;
+}
+header .head_bar{
+	height: .8rem;
+	background: url(../images/logo.png)no-repeat center center;
+	background-color: black;
+	background-size: 36%;
+}
+header .head_bar a{
+	color: black;
+	display: block;
+    width: .5rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-indent: .75rem;
+    overflow: hidden;
+    margin: .13rem .13rem;
+}
+header .head_bar a:nth-child(3){
+	margin: .13rem .15rem .13rem .11rem;
+}
+header .head_bar .all{
+	float: left;
+	background: url(../images/menu.png)no-repeat center center;
+	background-size: .3rem .3rem;
+}
+header .head_bar .search{
+	float: left;
+	background: url(../images/search.png)no-repeat center center;
+	background-size: .4rem .4rem;
+}
+header .head_bar .my{
+	float: right;
+	background: url(../images/my.png)no-repeat center center;
+	background-size: .4rem .4rem;
+}
+header .head_bar .cart{
+	float: right;
+	background: url(../images/cart.png)no-repeat center center;
+	background-size: .45rem .4rem;
+}
+
+header .nav li{
+	float: left;
+	border-right: 1px solid black;
+}
+header .nav li:last-child{
+	border:none;
+}
+
