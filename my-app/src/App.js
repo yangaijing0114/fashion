@@ -8,6 +8,10 @@ import {
 } from 'react-router-dom'
 import { DatePicker, message } from 'antd';
 
+<<<<<<< HEAD
+=======
+import { DatePicker, message} from 'antd';
+>>>>>>> 4f440dbb4231f4240db89d5eece2b43a4b26307e
 
 import Home from './components/Home'
 import Classify from './components/Classify'
