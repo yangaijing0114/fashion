@@ -6,8 +6,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import { DatePicker, message } from 'antd';
 
-import { DatePicker, message,Tabs} from 'antd';
 
 import Home from './components/Home'
 import Classify from './components/Classify'
