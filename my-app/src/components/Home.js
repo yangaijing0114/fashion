@@ -1,12 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
-
-
-
-
-=======
 import '../css/home.css';
->>>>>>> b14e4f9487ae017e4c76ffefa95c7168dac2ae45
 export default class Detail extends React.Component {
 	render() {
 		return (
