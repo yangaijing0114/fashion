@@ -38,12 +38,21 @@ body{
       text-align: center;
 
 }
+.classify_botm1,.classify_bottom2{
+  width:100%;
+  height:9.34rem;
+  overflow: hidden;
+  position:relative;
+}
 .classify_bottom{
 	width:100%;
+	height:100%;
 	flex:1;
 	margin-top: 0.16rem;
 	background:#fff;
-	overflow: hidden;
+	position:absolute;
+	left:0;
+	top:0;
 }
 .classify_bottom .classify_title{
 	width:100%;
@@ -78,6 +87,106 @@ body{
 		margin-left:0.2rem;
 }
 .classify_bottom li p{
+		float:right;
+        margin-right:0.4rem;
+}
+
+
+
+.classify_bottom2{
+	width:100%;
+	height:100%;
+	flex:1;
+	margin-top: 0.16rem;
+	background:#fff;
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.classify_bottom2 .classify_title{
+	width:100%;
+	height:0.8rem;
+	border-bottom:1px solid #ccc;
+	display: flex;
+	align-items: center;
+}
+.classify_bottom2 .classify_title a{
+	width:25%;
+	text-align: center;
+	font-weight:900;
+}
+.classify_bottom2 li{
+	width:100%;
+	height:0.8rem;
+	border-bottom:1px solid #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.classify_bottom2 li span{
+		margin-left:0.4rem;
+		display: block;
+		font-size:0.3rem;
+}
+.classify_bottom2 li strong{
+		font-size:0.3rem;
+		color:#ccc;
+		font-weight:100;
+		margin-left:0.2rem;
+}
+.classify_bottom2 li p{
+		float:right;
+        margin-right:0.4rem;
+}
+
+
+
+.classify_bottom3{
+	width:100%;
+	height:100%;
+	flex:1;
+	margin-top: 0.16rem;
+	background:#fff;
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.classify_bottom3 .classify_title{
+	width:100%;
+	height:0.8rem;
+	border-bottom:1px solid #ccc;
+	display: flex;
+	align-items: center;
+}
+.classify_bottom3 .classify_title a{
+	width:25%;
+	text-align: center;
+	font-weight:900;
+}
+.classify_bottom3 li{
+	width:100%;
+	height:0.8rem;
+	border-bottom:1px solid #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.classify_bottom3 li span{
+		margin-left:0.4rem;
+		display: block;
+		font-size:0.3rem;
+}
+.classify_bottom3 li strong{
+		font-size:0.3rem;
+		color:#ccc;
+		font-weight:100;
+		margin-left:0.2rem;
+}
+.classify_bottom3 li p{
 		float:right;
         margin-right:0.4rem;
 }
