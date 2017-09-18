@@ -40,12 +40,29 @@ header .head_bar .cart{
 	background: url(../images/cart.png)no-repeat center center;
 	background-size: .45rem .4rem;
 }
+header .head_nav{
+	padding-left:1.35rem;
+	height: 1rem;
+	background: #efefef;
+	text-align: center;
+	line-height: .36rem;
+}
 
-header .nav li{
+
+
+
+header .head_nav li{
+    font-size: 16px;
+	padding:0 .3rem ;
+	margin-top: .3rem;
+	height: .4rem;
 	float: left;
 	border-right: 1px solid black;
 }
-header .nav li:last-child{
+header .head_nav li:last-child{
 	border:none;
+}
+header .head_nav li a{
+	color: black;
 }
 
