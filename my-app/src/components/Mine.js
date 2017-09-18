@@ -5,21 +5,7 @@ import login_title2 from "../images/login_title2.gif"
 import regist_title from "../images/reg_title.gif"
 import regist_title2 from "../images/reg_title2.gif"
 export default class Mine extends React.Component {
-//	constructor() {
-//		// 必须在第一行执行父类构造器！！！！
-//		super();
-//		//在构造器中初始化state
-//		this.state = {list: []};
-//		this.change = this.change.bind(this);
-//	}
-//	change() {
-//		this.state.list.push(this.refs.ipt.value);
-//		console.log(this.state.list);
-//
-//		this.setState({
-//			list: this.state.list
-//		})
-//	}
+
 	render() {
 		return (
 			<div className="my">
