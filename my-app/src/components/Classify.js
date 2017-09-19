@@ -1,6 +1,5 @@
 import React from 'react'
 import "../css/Classify.css"
-
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 
