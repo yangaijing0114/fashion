@@ -8,13 +8,243 @@ ul,ol,li{
 }
 body{
    font-famliy:"微软雅黑";
-
+   
+}
+.shop_box{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction: column;	
+	/*overflow: hidden;*/
+	
 }
 
 
+/*  top */
+.shop_top{
+    width:100%;
+    height:1rem;
+    background: #000000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop_top i{
+  font-size:0.6rem;
+  color:#fff;
 
+}
+.shop_top strong{
+
+	font-size:0.5rem;
+    color:#fff;
+}
 .stop_shop{
    width:100%;
    height:3rem;
 
+}
+/*      bottom          */
+.shop_bottom{
+     width:100%;
+     height:6.34rem;
+     display: flex;
+     /*overflow: hidden;*/
+}
+
+.shop_btm_box{
+	width:96%;
+	height:100%;
+	margin-top:2% ;	
+	margin-left:2%;
+	border:1px solid #e6e6e6;
+}
+.shop_btm_box_pi{
+  width:100%;
+  height:5.57rem;
+}
+.shop_btm_box .shop_btm_li1{
+    width:100%;
+    height:0.8rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #e6e6e6;   
+}
+.shop_btm_box .shop_btm_li1 h5{
+    margin-left:0.2rem;
+    line-height: 0.8rem;
+    font-size:0.26rem;
+    color: red;
+}
+.shop_btm_box h5 input{
+    width:0.2rem;
+    height:0.2rem;
+    line-height: 0.8rem;
+    margin-right: 0.1rem;
+} 
+
+.shop_btm_box .shop_btm_li1 span{
+    display: block;
+    margin-right:0.2rem;
+	line-height: 0.8rem;
+    font-size:0.26rem;
+}
+
+
+
+.shop_btm_li2{
+    width:100%;
+    height:0.5rem;
+    display: flex;
+    border-bottom:1px solid #e6e6e6;  
+}
+.shop_btm_li2  h6{ 
+    margin-left:0.2rem;
+    line-height: 0.5rem;
+    font-size:0.26rem;
+}
+.shop_btm_li2  h6 input{
+	width:0.2rem;
+    height:0.2rem;
+    line-height: 0.8rem;
+    margin-right: 0.1rem;
+}
+.shop_btm_li2  h6 span{
+	line-height: 0.5rem;
+    font-size:0.26rem;
+    color: #fff;
+    background:red;
+}
+.shop_btm_li2 b{
+	line-height: 0.5rem;
+    font-size:0.22rem;
+    color: red;
+    margin-left:0.2rem;
+}
+
+/*              gou wu che        */
+
+.shop_btm_li3_shop{
+  width:100%;
+  height:2.4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.shop_btm_li3_shop>input{
+	width:0.2rem;
+    height:0.2rem;
+    line-height: 2.4rem;
+    margin-left: 0.2rem;
+    margin-right:0.2rem;
+}
+.shop_btm_li3_shop .stop_yifu{
+    width:1.6rem;
+    height: 2rem;
+}
+.shop_btm_shop_right{
+    width:3rem;
+    height:2rem;
+    margin-left: 0.3rem;
+
+}
+.shop_btm_shop_right p{
+    font-size:0.24rem;
+    line-height: 0.4rem;
+}
+.shop_btm_shop_right .shop_btm_p2{
+    color:#ccc;
+}
+
+
+
+.shop_btm_jiage{
+	width:3.4rem;
+	height:1rem;
+}
+.shop_btm_jiage .shop_btm_suanshi{
+    width:1.3rem;
+    height:1rem;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.shop_btm_suanshi input{
+    width:0.34rem;
+    height:0.34rem;
+    border-radius: 0.1rem;
+    background:#fff;
+    outline: none;
+    border:1px solid #ccc;
+    
+}
+.shop_btm_suanshi span{
+     width:0.32rem;
+     height:0.32rem;
+     border: 0.01rem solid #ccc;
+     border-radius: 0.1rem;
+     margin:0 0.04rem;
+     text-align: center;
+}
+.shop_btm_shuoming{
+	padding-top: 0.2rem;
+}
+.shop_btm_shuoming b{
+	margin-left:0.8rem;
+
+}
+.shop_btm_li4{
+	width:100%;
+	height:1.8rem;
+    border-bottom:1px solid #ccc;
+  	
+}
+.shop_btm_shuoming strong{
+	margin-right: 0.2rem;
+	
+}
+.shop_btm_li4 .shop_btm_shop_mingxibiao{
+	width:3rem;
+	height:1.8rem;
+	float: right;
+	
+}
+.shop_btm_li4 .shop_btm_shop_mingxibiao p{
+     float:right;
+     margin-top: 0.08rem;
+     margin-right: 0.2rem;
+}
+
+.shop_botm_zongjia{
+	width:100%;
+	height:0.76rem;
+	display:flex;
+	align-items:center;
+}
+.shop_botm_zj_qubu{
+    width:80%;
+    height:0.76rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.shop_botm_zj_qubu span{
+   font-size:0.26rem;
+}
+.shop_botm_zj_qubu input{
+     width:0.2rem;
+    height:0.2rem;
+    margin-left: 0.2rem;
+    margin-right:0.2rem;
+}
+.shop_botm_zj_qubu .shop_botm_zj_qubu_heji{
+	font-size:0.2rem;
+}
+.shop_botm_zongjia button{
+	width:20%;
+	height:0.76rem;
+    background:red;
+    border:none;
+    outline:none;
 }

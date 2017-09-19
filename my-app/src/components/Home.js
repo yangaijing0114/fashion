@@ -1,9 +1,5 @@
 import React from 'react'
 import '../css/home.css';
-<<<<<<< HEAD
-
-=======
->>>>>>> 4f440dbb4231f4240db89d5eece2b43a4b26307e
 export default class Detail extends React.Component {
 	render() {
 		return (

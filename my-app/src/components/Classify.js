@@ -7,6 +7,8 @@ const TabPane = Tabs.TabPane;
 export default class Classify extends React.Component {
 	render() {
 		return (
+			
+		<div className="classify">
 			<div className="card-container">
 				<Tabs type="card">
 			      <TabPane tab="女装" key="1">
@@ -48,6 +50,7 @@ export default class Classify extends React.Component {
 			      </TabPane>
 			    </Tabs>
 			</div>
+		</div>
 		)
 	}
 } 
