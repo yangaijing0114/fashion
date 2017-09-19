@@ -67,18 +67,229 @@
 .my header .my_nav li span{
 	float: right;
 }
-.my header .login{
+
+
+
+
+/*-------------------------------选项卡----------------------------*/
+.my header .card-container{
 	width:100%;
-	height:1.1rem;
-	border:none;
+	height:8.5rem;
+	background:none;
 }
-.my header .login li{
-	width:50%;
-	height:100%;
+.my header .card-container > .ant-tabs-card > .ant-tabs-content {
+    width:80%;
+	height:7rem;
+	border:none;
+	border:1px solid #ccc;
+	margin: auto;
+	position: relative;
+	margin-top:0.3rem;
+	background:none;
+}
+
+.my header .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  background: url(../images/login_title2.gif);
+  background-size: 100% 100%;
+  width:50%;
+  height:100%;
+  color:#ccc;
+}
+.my header .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+	background: url(../images/login_title.jpg);
+	background-size: 100% 100%;
+	color:#000;
+}
+.my header .card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane-inactive{
+	display: none;
+}
+/*---------------------------tab_conent----------------------------------*/
+.my header .tab_conent .log{
+	width:100%;
+	height:0.5rem;
+	background:orange;
+	text-align: center;
+	line-height:0.5rem;
+	color:#fff;
+	position: absolute;
+	left:0;
+}
+.my header .tab_conent input{
+	width:86%;
+	height:0.7rem;
+	background:#EEEEEE;
+	border:none;
+	outline: none;
+	margin-top:0.1rem;
+	margin-left:0.7rem;
+}
+.my header .tab_conent img{
+	width:0.7rem;
+	height:0.7rem;
+	position:absolute;
+}
+.my header .tab_conent .user{
+	left:0;
+	top:0.8rem;
+}
+.my header .tab_conent .pwd{
+	left:0;
+	top:1.6rem;
+}
+.my header #name{
+	margin-top:0.8rem;
+}
+.my header .tab_conent .con{
+	width:100%;
+	height:1.6rem;
+	border:1px solid #ccc;
+	margin-top:1rem;
+}
+.my header .ant-tabs-tabpane-active p{
+	margin-right: none;
+}
+.my header .ant-tabs-tabpane-active span{
+	font-size: 0.1rem;
+	margin-left: 0;
+}
+.my header .tab_conent .con p{
+	width:42%;
+	height:0.7rem;
 	float: left;
+	font-size:0.2rem;
+	line-height:0.7rem;
+	margin-right:0.2rem;
+	margin-left:0.1rem;
 }
-.my header .login li img{
-	width:100%;
-	height:100%;
+
+.my header .tab_conent .con p input{
+	width:0.2rem;
+	height:0.2rem;
+	float: left;
+	margin-top:0.25rem;
+}
+.my header .tab_conent .con input:first-child{
+	margin-left:0;
+}
+.my header .tab_conent .con button{
+	width:2.5rem;
+	height:0.5rem;
+	margin-left:1.2rem;
+	background:#ff4500;
 	border:none;
+	outline: none;
+	color:#fff;
+}
+
+
+.my header .tab2_conent{
+	width:100%;
+	height:4rem;
+	border:1px solid #ccc;
+	margin: auto;
+	position: relative;
+}
+.my header .tab2_conent .log{
+	width:100%;
+	height:0.5rem;
+	background:orange;
+	text-align: center;
+	line-height:0.5rem;
+	color:#fff;
+	position: absolute;
+	left:0;
+}
+.my header .tab2_conent > span{
+	width:1rem;
+	height:0.5rem;
+	background:#8d8d8d;
+	position: absolute;
+	left:0;
+	text-align:center;
+	line-height:0.5rem;
+	color:#fff;
+}
+.my header .tab2_conent > input{
+	width:80%;
+	height:0.5rem;
+	background:#EEEEEE;
+	border:none;
+	outline: none;
+	margin-top:0.15rem;
+	margin-left:1rem;
+}
+.my header .tab2_conent .sex{
+	width:2rem;
+	height:0.5rem;
+	position: absolute;
+	left:1rem;
+	top:3.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.my header .tab2_conent .sex input{
+	width:0.2rem;
+	height:0.2rem;
+	margin-top:0;
+	margin-left:0;
+}
+.my header .tab2_conent .sex span{
+	display: block;
+	background:none;
+	color:#000;
+	width:0.3rem;
+	height:0.3rem;
+	text-align: center;
+	line-height:0.3rem;	
+}
+#email{
+	margin-top: 0.7rem;
+}
+.my header .tabs .tab2_conent .con{
+	width:100%;
+	height:2rem;
+	border:1px solid #ccc;
+	margin-top:0.4rem;
+}
+.my header .tab2_conent .con p:first-child{
+	width:100%;
+	height:0.5rem;
+	font-size:0.2rem;
+	text-align: center;
+	line-height:0.5rem;
+	color:#DF5000;
+	border:1px solid #ccc;
+	position: absolute;
+	left:0;
+	margin-top:0.2rem;
+}
+.my header .tab2_conent .con .xieyi input{
+	width:0.2rem;
+	height:0.2rem;
+	margin-left:1rem;
+}
+.my header .tab2_conent .con .xieyi{
+	width:100%;
+	height:0.3rem;
+	font-size:0.2rem;
+	line-height:0.3rem;
+	margin-bottom:0.2rem;
+	margin-top:0.8rem;
+}
+.my header .tab2_conent .con button{
+	width:2.5rem;
+	height:0.5rem;
+	margin-left:1.2rem;
+	background:#ff4500;
+	border:none;
+	outline: none;
+	color:#fff;
+}
+#ver_rand{
+	width:1rem;
+	height:0.5rem;
+	position: absolute;
+	left:1rem;
+	top:4.6rem;
 }
