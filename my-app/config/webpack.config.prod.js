@@ -213,7 +213,7 @@ module.exports = {
                   fallback: require.resolve('style-loader'),
                   use: [
                     {
-                      loader: require.resolve('scss-loader'),
+                      loader: require.resolve('sass-loader'),
                       options: {
                         importLoaders: 1,
                         minimize: true,

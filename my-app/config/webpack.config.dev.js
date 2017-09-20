@@ -195,7 +195,7 @@ module.exports = {
             use: [
               require.resolve('style-loader'),
               {
-                loader: require.resolve('scss-loader'),
+                loader: require.resolve('sass-loader'),
                 options: {
                   importLoaders: 1,
                 },
