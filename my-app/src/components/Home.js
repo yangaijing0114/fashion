@@ -2,13 +2,11 @@ import React from 'react'
 
 
 import '../css/home.css';
-<<<<<<< HEAD
-=======
+
 import { Carousel } from 'antd';
 import Img from '../images/714165_16259662_k3_2.gif'
 import Img1 from '../images/slide_08.jpg'
 
->>>>>>> 80dd6b7776ee513bd20a78217d48f91dad1bf25b
 export default class Detail extends React.Component {
 	render() {
 		    const settings = {
