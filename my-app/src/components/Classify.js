@@ -22,6 +22,9 @@ export default class Classify extends React.Component {
 			    	<li><span>内衣<strong>INNER</strong></span><p>></p></li>
 			    	<li><span>精品<strong>SUMMER</strong></span><p>></p></li>
 			    	<li><span>运动装<strong>VAVI MELLO</strong></span><p>></p></li>
+			    	<li><span>内衣<strong>INNER</strong></span><p>></p></li>
+			    	<li><span>精品<strong>SUMMER</strong></span><p>></p></li>
+			    	<li><span>运动装<strong>VAVI MELLO</strong></span><p>></p></li>
 			    	
 			    	
 			      </TabPane>
