@@ -82,7 +82,7 @@
 }
 .my header .card-container > .ant-tabs-card > .ant-tabs-content {
     width:80%;
-	height:7rem;
+	height:7.5rem;
 	border:none;
 	border:1px solid #ccc;
 	margin: auto;
@@ -300,4 +300,10 @@
 	position: absolute;
 	left:1rem;
 	top:4.6rem;
+}
+.my header .judged{
+	position: absolute;
+	left:2rem;
+	top:7rem;
+	color:#BD2C00;
 }

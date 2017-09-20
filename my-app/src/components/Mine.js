@@ -9,10 +9,20 @@ export default class Mine extends React.Component {
 	constructor(){
 		super();
 		this.change = this.change.bind(this)
+		this.judge = this.judge.bind(this)
 	}
 	change(){
-		console.log(this.refs.email.value)
 		
+		
+	}
+	judge(){
+		console.log(this.refs.judged.value)
+		var val = this.refs.email.value
+		if(!val){
+			this.refs.judged.innerHTML="邮箱不能为空";
+		}else if(!(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(val))){
+			this.refs.judged.innerHTML="邮箱格式错误"
+		}
 	}
 	render() {
 		return (
@@ -58,8 +68,9 @@ export default class Mine extends React.Component {
 					    		<p className="log">
 					    			User Join
 					    		</p>
+					    		
 					    		<span style={{top:"0.7rem"}}>电子邮件</span>
-					    		<input type="text" id="email" ref="email"/>
+					    		<input type="text" id="email" ref="email" onBlur={this.judge}/>
 					    		<span style={{top:"1.35rem"}}>密码</span>
 					    		<input type="text" id="pass" ref="pass"/>
 					    		<span style={{top:"2rem"}}>确认密码</span>
@@ -93,7 +104,9 @@ export default class Mine extends React.Component {
 						    		
 						    		<button>注册</button>
 						    	</div>
+						    	
 					    	</div>
+					    	<p className="judged" ref="judged"></p>
 					      </TabPane>
 					    </Tabs>
 					  </div>
@@ -101,6 +114,7 @@ export default class Mine extends React.Component {
 
 						
 				</header>
+				
 			</div>
 		)
 	}
