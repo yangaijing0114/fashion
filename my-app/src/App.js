@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
 import './css/home.css'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -8,6 +9,11 @@ import {
 } from 'react-router-dom'
 import { DatePicker, message } from 'antd';
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 80dd6b7776ee513bd20a78217d48f91dad1bf25b
 import Home from './components/Home'
 import Classify from './components/Classify'
 import Shopcart from './components/Shopcart'
