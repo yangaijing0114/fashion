@@ -77,6 +77,9 @@
 	height:8.5rem;
 	background:none;
 }
+.my header .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container{
+	height:1rem;
+}
 .my header .card-container > .ant-tabs-card > .ant-tabs-content {
     width:80%;
 	height:7rem;
@@ -88,11 +91,18 @@
 	background:none;
 }
 
+.my header .ant-tabs-nav {
+	width:100%;
+	height:1rem;
+}
 .my header .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
-  background: url(../images/login_title2.gif);
-  background-size: 100% 100%;
   width:50%;
   height:100%;
+  background: url(../images/login_title2.gif);
+  background-size: 100% 100%;
+  text-align: center;
+  line-height:0.8rem;
+  font-size:0.3rem;
   color:#ccc;
 }
 .my header .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
@@ -184,7 +194,7 @@
 
 .my header .tab2_conent{
 	width:100%;
-	height:4rem;
+	height:7.5rem;
 	border:1px solid #ccc;
 	margin: auto;
 	position: relative;
@@ -243,14 +253,13 @@
 	text-align: center;
 	line-height:0.3rem;	
 }
-#email{
+.my header #email{
 	margin-top: 0.7rem;
 }
-.my header .tabs .tab2_conent .con{
+.my header .tab2_conent .con{
 	width:100%;
 	height:2rem;
-	border:1px solid #ccc;
-	margin-top:0.4rem;
+	
 }
 .my header .tab2_conent .con p:first-child{
 	width:100%;
@@ -262,12 +271,11 @@
 	border:1px solid #ccc;
 	position: absolute;
 	left:0;
-	margin-top:0.2rem;
+	top:5.2rem;
 }
 .my header .tab2_conent .con .xieyi input{
 	width:0.2rem;
 	height:0.2rem;
-	margin-left:1rem;
 }
 .my header .tab2_conent .con .xieyi{
 	width:100%;
@@ -275,7 +283,7 @@
 	font-size:0.2rem;
 	line-height:0.3rem;
 	margin-bottom:0.2rem;
-	margin-top:0.8rem;
+	margin-top:0.7rem;
 }
 .my header .tab2_conent .con button{
 	width:2.5rem;
@@ -286,7 +294,7 @@
 	outline: none;
 	color:#fff;
 }
-#ver_rand{
+.my header #ver_rand{
 	width:1rem;
 	height:0.5rem;
 	position: absolute;

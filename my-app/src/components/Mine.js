@@ -11,7 +11,8 @@ export default class Mine extends React.Component {
 		this.change = this.change.bind(this)
 	}
 	change(){
-		console.log("change")
+		console.log(this.refs.email.value)
+		
 	}
 	render() {
 		return (
@@ -58,13 +59,13 @@ export default class Mine extends React.Component {
 					    			User Join
 					    		</p>
 					    		<span style={{top:"0.7rem"}}>电子邮件</span>
-					    		<input id="email"/>
+					    		<input type="text" id="email" ref="email"/>
 					    		<span style={{top:"1.35rem"}}>密码</span>
-					    		<input id="pass"/>
+					    		<input type="text" id="pass" ref="pass"/>
 					    		<span style={{top:"2rem"}}>确认密码</span>
-					    		<input id="pass"/>
+					    		<input type="text" id="pass" ref="pass2"/>
 					    		<span style={{top:"2.65rem"}}>用户名</span>
-					    		<input id="username"/>
+					    		<input type="text" d="username" ref="username"/>
 					    		<span style={{top:"3.3rem"}}>性别</span>
 					    		<input id="sex"/>
 					    		<div className="sex">
@@ -74,7 +75,7 @@ export default class Mine extends React.Component {
 					    			<span>女</span>
 					    		</div>
 					    		<span style={{top:"3.95rem"}}>手机号</span>
-					    		<input id="phone"/>
+					    		<input type="text" id="phone" ref="phone"/>
 					    		<span style={{top:"4.6rem"}}>验证码</span>
 					    		<input id="verify"/>
 					    		<p id="ver_rand" ref="random" onClick={this.change}>
