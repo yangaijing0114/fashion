@@ -31,8 +31,12 @@ export default class Detail extends React.Component {
 
 		componentDidMount(){
 			
+<<<<<<< HEAD
 			fetch("/api/getdata")
 			.then((res) => {
+=======
+			fetch("/api/getdata").then((res) => {
+>>>>>>> 0d36e76bba047acd829a51f402f323f045d29751
 			 	return res.json();
 			 }).then((data)=>{
 			 	console.log(data)
