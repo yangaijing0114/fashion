@@ -13,6 +13,8 @@ import Home from './components/Home'
 import Classify from './components/Classify'
 import Shopcart from './components/Shopcart'
 import Mine from './components/Mine'
+import ClassifyChild from './components/ClassifyChild'
+
 const App = () => (
   <Router>
     <div className="app">
@@ -21,6 +23,7 @@ const App = () => (
 	      <Route path="/classify" component={Classify}/>
 	      <Route path="/shopcart" component={Shopcart}/>	
 	      <Route path="/mine" component={Mine}/>
+	      <Route path="/classifyChild" component={ClassifyChild}/>
     	</div>
       <ul className="nav">
         <li><i className="icon iconfont icon-shouye"></i><Link to="/">首页</Link></li>
