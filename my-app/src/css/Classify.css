@@ -90,6 +90,9 @@ body{
     left:0;
     top:0;
 }
+.classify .ant-tabs-tabpane-active a{
+	color:#222222;
+}
 .classify .ant-tabs-tabpane-active li{
 	width:100%;
 	height:0.8rem;
