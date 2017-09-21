@@ -1,9 +1,8 @@
 import React from 'react'
-<<<<<<< HEAD
+
 import '../css/home.css';
-=======
-import "../css/detail.css"
->>>>>>> b0b78b85d5e6a96891f9154350afee812d0aa889
+
+
 export default class Detail extends React.Component {
 	
 	constructor(){
@@ -59,7 +58,7 @@ export default class Detail extends React.Component {
 		console.log(this.state.Goods)
 		console.log(this.props.match.params.id)
 		return (
-<<<<<<< HEAD
+
 			<div>
 				<header>
 					<div className="head_bar">
@@ -96,11 +95,8 @@ export default class Detail extends React.Component {
 					<img src={this.state.Goods_detail1} />
 					<img src={this.state.Goods_detail2} />
 				</div>		
-=======
-			<div className="detail">
+
 			
-			
->>>>>>> b0b78b85d5e6a96891f9154350afee812d0aa889
 			</div>
 		)
 	}
