@@ -9,9 +9,20 @@ export default class Mine extends React.Component {
 	constructor(){
 		super();
 		this.change = this.change.bind(this)
+		this.judge = this.judge.bind(this)
 	}
 	change(){
-		console.log("change")
+		
+		
+	}
+	judge(){
+		console.log(this.refs.judged.value)
+		var val = this.refs.email.value
+		if(!val){
+			this.refs.judged.innerHTML="邮箱不能为空";
+		}else if(!(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(val))){
+			this.refs.judged.innerHTML="邮箱格式错误"
+		}
 	}
 	render() {
 		return (
@@ -57,14 +68,15 @@ export default class Mine extends React.Component {
 					    		<p className="log">
 					    			User Join
 					    		</p>
+					    		
 					    		<span style={{top:"0.7rem"}}>电子邮件</span>
-					    		<input id="email"/>
+					    		<input type="text" id="email" ref="email" onBlur={this.judge}/>
 					    		<span style={{top:"1.35rem"}}>密码</span>
-					    		<input id="pass"/>
+					    		<input type="text" id="pass" ref="pass"/>
 					    		<span style={{top:"2rem"}}>确认密码</span>
-					    		<input id="pass"/>
+					    		<input type="text" id="pass" ref="pass2"/>
 					    		<span style={{top:"2.65rem"}}>用户名</span>
-					    		<input id="username"/>
+					    		<input type="text" d="username" ref="username"/>
 					    		<span style={{top:"3.3rem"}}>性别</span>
 					    		<input id="sex"/>
 					    		<div className="sex">
@@ -74,7 +86,7 @@ export default class Mine extends React.Component {
 					    			<span>女</span>
 					    		</div>
 					    		<span style={{top:"3.95rem"}}>手机号</span>
-					    		<input id="phone"/>
+					    		<input type="text" id="phone" ref="phone"/>
 					    		<span style={{top:"4.6rem"}}>验证码</span>
 					    		<input id="verify"/>
 					    		<p id="ver_rand" ref="random" onClick={this.change}>
@@ -92,7 +104,9 @@ export default class Mine extends React.Component {
 						    		
 						    		<button>注册</button>
 						    	</div>
+						    	
 					    	</div>
+					    	<p className="judged" ref="judged"></p>
 					      </TabPane>
 					    </Tabs>
 					  </div>
@@ -100,6 +114,7 @@ export default class Mine extends React.Component {
 
 						
 				</header>
+				
 			</div>
 		)
 	}
