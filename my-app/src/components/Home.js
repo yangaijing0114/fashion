@@ -1,5 +1,9 @@
 import React from 'react'
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 import '../css/home.css';
 
@@ -7,7 +11,7 @@ import { Carousel, Menu, Icon, Button } from 'antd';
 import Img from '../images/714165_16259662_k3_2.gif'
 import Img1 from '../images/slide_08.jpg'
 const SubMenu = Menu.SubMenu;
-export default class Detail extends React.Component {
+export default class Home extends React.Component {
 	constructor(){
 		super();
 		this.toggleCollapsed = this.toggleCollapsed.bind(this)
@@ -20,7 +24,7 @@ export default class Detail extends React.Component {
 	      collapsed: !this.state.collapsed,
 	    });
 	  }
-  
+
 	render() {
 		    const settings = {
 		      dots: true,
@@ -109,9 +113,11 @@ export default class Detail extends React.Component {
 					<div className="list_body">
 						<div className="salelist">
 							<div className="list_shopImg">
-								<a href="">
+
+						
 									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
+								
+							
 							</div>
 							<div className="list_shopName">
 								<a href="">
@@ -123,6 +129,7 @@ export default class Detail extends React.Component {
 									¥ 129
 								</a>
 							</div>
+							
 						</div>
 						<div className="salelist">
 							<div className="list_shopImg">

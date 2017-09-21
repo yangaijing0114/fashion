@@ -21,6 +21,7 @@ const App = () => (
 	      <Route path="/classify" component={Classify}/>
 	      <Route path="/shopcart" component={Shopcart}/>	
 	      <Route path="/mine" component={Mine}/>
+	      
     	</div>
       <ul className="nav">
         <li><i className="icon iconfont icon-shouye"></i><Link to="/">首页</Link></li>
