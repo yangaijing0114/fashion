@@ -17,7 +17,7 @@ import { Carousel, Menu, Icon, Button } from 'antd';
 
 
 
-export default class Detail extends React.Component {
+export default class Home extends React.Component {
 	
 
 	    constructor(){
