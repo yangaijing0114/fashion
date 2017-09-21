@@ -8,6 +8,9 @@ import Img1 from '../images/slide_08.jpg'
 
 export default class ClassifyChild extends React.Component{
 	render(){
+		
+		
+		
 		const settings = {
 		      dots: true,
 		      infinite: true,
