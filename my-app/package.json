@@ -59,7 +59,16 @@
     "redux": "^3.7.2",
     "sass-loader": "^6.0.6"
   },
+<<<<<<< HEAD
   
+=======
+  "proxy":{
+  	"/api" :{
+  		"target":"http://localhost:8888",
+  		"ws": true
+		}  	
+  },
+>>>>>>> 704a75066eea8a8586f7d3f2664dcdb2d3806e27
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"

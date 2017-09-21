@@ -11,8 +11,9 @@ var api = require('./routes/api');
 
 var app = express();
 
+// 连接数据库
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/fashion');
+mongoose.connect('mongodb://localhost/shishangqiyi');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

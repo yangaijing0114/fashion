@@ -1,13 +1,62 @@
 import React from 'react'
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 import '../css/home.css';
 
+<<<<<<< HEAD
+import { Carousel } from 'antd';
+
+import Img1 from '../images/slide_08.jpg'
+import {Link} from 'react-router-dom'
+
+export default class Detail extends React.Component {
+	
+
+	    constructor(){
+			super();
+			this.state = {
+				Goods : []
+			}
+		}
+
+		componentDidMount(){
+			
+			fetch("/api/getdata").then((res) => {
+			 	return res.json();
+			 }).then((data)=>{
+			 	console.log(data)
+			 	this.setState({ //让页面上数据更新
+			 		Goods: data
+			 	})
+			 })	
+		}
+
+
+
+
+
+render() {
+	    const settings = {
+	      dots: true,
+	      infinite: true,
+	      speed: 500,
+	      slidesToShow: 1,
+	      slidesToScroll: 1,
+	      autoplay: true
+	    };
+
+		return (
+			<div>
+=======
 import { Carousel, Menu, Icon, Button } from 'antd';
 import Img from '../images/714165_16259662_k3_2.gif'
 import Img1 from '../images/slide_08.jpg'
 const SubMenu = Menu.SubMenu;
-export default class Detail extends React.Component {
+export default class Home extends React.Component {
 	constructor(){
 		super();
 		this.toggleCollapsed = this.toggleCollapsed.bind(this)
@@ -20,7 +69,7 @@ export default class Detail extends React.Component {
 	      collapsed: !this.state.collapsed,
 	    });
 	  }
-  
+
 	render() {
 		    const settings = {
 		      dots: true,
@@ -71,6 +120,7 @@ export default class Detail extends React.Component {
 			          </SubMenu>
 			        </Menu>
 			      </div>
+>>>>>>> b0b78b85d5e6a96891f9154350afee812d0aa889
 				<header>
 					<div className="head_bar">
 						<a href="javascript:;" className="all">全部</a>
@@ -107,11 +157,30 @@ export default class Detail extends React.Component {
 						Seller
 					</h2>
 					<div className="list_body">
+<<<<<<< HEAD
+						{
+							this.state.Goods.map((item,index) => {
+								return  <Link to ={"/detail/"+ item._id }  key={item._id} className="salelist">
+											<div className="list_shopImg">
+													<img src={item.img} style={{border:"0",width:"100%"}} alt=""/>
+											</div>
+											<div className="list_shopName">									
+												{item.explain}					
+											</div>
+											<div className="list_shopPrice">
+												{item.presentprice}	
+											</div>		
+										</Link>
+							})
+						}
+=======
 						<div className="salelist">
 							<div className="list_shopImg">
-								<a href="">
+
+						
 									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
+								
+							
 							</div>
 							<div className="list_shopName">
 								<a href="">
@@ -123,6 +192,7 @@ export default class Detail extends React.Component {
 									¥ 129
 								</a>
 							</div>
+							
 						</div>
 						<div className="salelist">
 							<div className="list_shopImg">
@@ -209,8 +279,8 @@ export default class Detail extends React.Component {
 								</a>
 							</div>
 						</div>
+>>>>>>> b0b78b85d5e6a96891f9154350afee812d0aa889
 					</div>
-					
 					
 					
 					
@@ -219,108 +289,21 @@ export default class Detail extends React.Component {
 						Arrivals
 					</h2>
 					<div className="list_body">
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
+						{
+							this.state.Goods.map((item,index) => {
+								return  <Link to ={"/detail/"+ item._id }  key={item._id} className="salelist">
+											<div className="list_shopImg">
+													<img src={item.img} style={{border:"0",width:"100%"}} alt=""/>
+											</div>
+											<div className="list_shopName">									
+												{item.explain}					
+											</div>
+											<div className="list_shopPrice">
+												{item.presentprice}	
+											</div>		
+										</Link>
+							})
+						}
 					</div>
 					
 					
@@ -330,108 +313,21 @@ export default class Detail extends React.Component {
 						Best
 					</h2>
 					<div className="list_body">
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
-						<div className="salelist">
-							<div className="list_shopImg">
-								<a href="">
-									<img src={Img} style={{border:"0",width:"100%"}} alt=""/>
-								</a>
-							</div>
-							<div className="list_shopName">
-								<a href="">
-									★难得的机会★ 弹力~~完全舒适的裤子
-								</a>
-							</div>
-							<div className="list_shopPrice">
-								<a href="">
-									¥ 129
-								</a>
-							</div>
-						</div>
+						{
+							this.state.Goods.map((item,index) => {
+								return  <Link to ={"/detail/"+ item._id }  key={item._id} className="salelist">
+											<div className="list_shopImg">
+													<img src={item.img} style={{border:"0",width:"100%"}} alt=""/>
+											</div>
+											<div className="list_shopName">									
+												{item.explain}					
+											</div>
+											<div className="list_shopPrice">
+												{item.presentprice}	
+											</div>		
+										</Link>
+							})
+						}
 					</div>
 					
 					
@@ -440,19 +336,9 @@ export default class Detail extends React.Component {
 							<img src={Img1}  style={{border:"0",width:"100%",margin:"0 0 1.2rem 0"}} alt=""/>		
 						</a>
 					</div>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-				</main>
+				</main>	
+		
+				
 			</div>
 		)
 	}

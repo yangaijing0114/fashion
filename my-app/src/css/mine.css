@@ -303,7 +303,11 @@
 }
 .my header .judged{
 	position: absolute;
-	left:2rem;
+	left:1rem;
 	top:7rem;
 	color:#BD2C00;
+}
+#verify{
+	width:69%;
+	margin-left:1.6rem;
 }
