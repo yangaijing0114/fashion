@@ -1,8 +1,8 @@
 import React from 'react'
 import "../css/Classify.css"
+import {Link} from 'react-router-dom'
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
-
 export default class Classify extends React.Component {
 	render() {
 		return (
@@ -11,8 +11,17 @@ export default class Classify extends React.Component {
 			<div className="card-container">
 				<Tabs type="card">
 			      <TabPane tab="女装" key="1">
-			        <li><span>上衣<strong>TOP</strong></span><p>></p></li>
-			    	<li><span>衬衫&罩衫<strong>SHIRTS & BLOUSE</strong></span><p>></p></li>
+			        <Link to={"./ClassifyChild"}>
+				        <li>
+					        <span>
+					        上衣
+					        <strong>TOP</strong>
+					        </span>
+					        <p>></p>
+				        </li>
+			        </Link>
+
+			    	 <Link to={"./ClassifyChild"}><li><span>衬衫&罩衫<strong>SHIRTS & BLOUSE</strong></span><p>></p></li> </Link>
 			    	<li><span>外套<strong>OUTER</strong></span><p>></p></li>
 			    	<li><span>半身裙<strong>SKIRT</strong></span><p>></p></li>
 			    	<li><span>连衣裙<strong>DRESS</strong></span><p>></p></li>
@@ -29,7 +38,7 @@ export default class Classify extends React.Component {
 			    	
 			      </TabPane>
 			      <TabPane tab="男装" key="2">
-			        <li><span>外套<strong>OUTER</strong></span><p>></p></li>
+			         <Link to={"./ClassifyChild"}><li><span>外套<strong>OUTER</strong></span><p>></p></li></Link>
 			    	<li><span>T恤衫<strong>T-SHIRTS & BLOUSE</strong></span><p>></p></li>
 			    	<li><span>衬衫<strong>SHIRTS</strong></span><p>></p></li>
 			    	<li><span>针织衫&开襟衫<strong>KNIT & CARDIGAN</strong></span><p>></p></li>
@@ -40,7 +49,7 @@ export default class Classify extends React.Component {
 			    
 			      </TabPane>
 			      <TabPane tab="美妆" key="3">
-			        <li><span>彩妆<strong>MAKE UP</strong></span><p>></p></li>
+			        <Link to={"./ClassifyChild"}><li><span>彩妆<strong>MAKE UP</strong></span><p>></p></li></Link>
 			    	<li><span>护肤<strong>SKIN CARE</strong></span><p>></p></li>
 			    	<li><span>头发护理<strong>HAIR CARE</strong></span><p>></p></li>
 			    	<li><span>身体护理<strong>BODY CARE</strong></span><p>></p></li>

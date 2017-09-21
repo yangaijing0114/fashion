@@ -1,0 +1,145 @@
+*{
+   margin:0;
+   padding:0;
+}
+ul,ol,li{
+    list-style: none;
+}
+
+.ClassifyChild_box{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ClassifyChild_box header{
+    width:100%;
+    height:1rem;
+    background:#000;
+    color: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ClassifyChild_box header h4{
+	color: #fff;
+    font-size:0.4rem;
+}
+
+.ClassifyChild_box header i{
+	font-size:0.5rem;
+	margin-left:0.2rem;
+	margin-right:0.2rem;
+
+}
+/*                                 liebiao                    */
+.ClassifyChild_box .ClassifyChild_shangyi{
+	width: 100%;
+	height: 9.36rem;
+	overflow: auto;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_box{
+	width: 100%;
+	height: 100%;
+}
+
+.ClassifyChild_box .ClassifyChild_shangyi_top{
+	width: 100%;
+	height: 100%;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_list{
+    width: 100%;
+	height: .8rem;
+    display:flex;
+    align-items: center;
+    position: relative;
+    border-bottom:1px solid #ccc;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_list .ClassifyChild_shangyi_left{
+	background: url(../images/left.png)center center no-repeat;
+	display: block;
+	height: .4rem;
+	width: .4rem;
+    position:absolute;
+    left:0;
+    top:0;
+	
+	
+}
+.ClassifyChild_box .ClassifyChild_shangyi_right{
+	background: url(../images/right.png)center center no-repeat;
+	display: block;
+	height: .4rem;
+	width: .4rem;
+	position:absolute;
+    right:0;
+    top:0;
+}
+.ClassifyChild_box  .ClassifyChild_shangyi_list a{
+    margin-top:0.2rem ;
+	line-height: .8rem;
+	color: black;
+	display: inline-block;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_class{
+	height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.4rem;
+    border-bottom:1px solid #ccc;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_ban1{
+	background: url(../images/719.jpg)center center no-repeat; 
+	background-size: cover; 
+	width: 100%;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_ban2{
+	background: url(../images/slide_02.jpg)center center no-repeat; 
+	background-size: cover; 
+	width: 100%;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_ban3{
+	background: url(../images/slide_06.jpg)center center no-repeat; 
+	background-size: cover; 
+	width: 100%;
+}
+.ClassifyChild_box .ClassifyChild_shangyi_ban4{
+	background: url(../images/slide_10.jpg)center center no-repeat; 
+	background-size: cover; 
+	width: 100%;
+}
+.ClassifyChild_box .list_body {
+	margin: .1rem 0 .5rem 0;
+	height: 8.4rem;
+	overflow: hidden;
+}
+.ClassifyChild_box .list_body .salelist{
+	float: left;
+    width: 33.33%;
+}
+.ClassifyChild_box .list_body a{
+	color: black;
+}
+.ClassifyChild_box .list_body .salelist  a .list_shopImg{
+	margin: 0 .05rem;
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.ClassifyChild_box .list_body .salelist .list_shopName{
+	margin-left: .1rem;
+    font-size: 12px;
+    line-height: .25rem;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.ClassifyChild_box .list_body .salelist .list_shopPrice{
+    margin: .1rem 0 .25rem .1rem;
+    line-height: .25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
